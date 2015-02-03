@@ -1,0 +1,66 @@
+<html>
+    <title>Backbone Library</title>
+    <head>
+        <link rel="stylesheet" href="js/lib/skeleton/css/normalize.css">
+        <link rel="stylesheet" href="js/lib/skeleton/css/skeleton.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="books">
+                <form id="add-book" action="#">
+                    <div class="add-book-form">
+                        <div class="input-set">
+                            <label for="coverImage">Cover image: </label><input id="coverImage" type="file">
+                        </div>
+                        <div class="input-set">
+                            <label for="title">Title: </label><input id="title" type="text">
+                        </div>
+                        <div class="input-set">
+                            <label for="author">Author: </label><input id="author" type="text">
+                        </div>
+                        <div class="input-set">
+                            <label for="releaseDate">ReleaseDate: </label><input id="releaseDate" type="text">
+                        </div>
+                        <div class="input-set">
+                            <label for="keywords">Keywords: </label><input id="keywords" type="text">
+                        </div>
+                        <div class="input-set">
+                            <button id="add">Add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="book-list"></div>
+        </div>
+
+        <!-- Templates -->
+        <script type="text/template" id="book-template">
+                <img src="img/placeholder.png" alt="<%= title %> - <%= author %>">
+                <ul>
+                    <li><%= title %></li>
+                    <li><%= author %></li>
+                    <li><%= releaseDate %></li>
+                    <li><%= keywords %></li>
+                </ul>
+
+                <button class="delete">Delete</button>
+        </script>
+
+        <!-- Lib -->
+        <script type="text/javascript" src="js/lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib/underscore/underscore-min.js"></script>
+        <script type="text/javascript" src="js/lib/backbone/backbone.js"></script>
+
+        <!-- App Models -->
+        <script type="text/javascript" src="js/models/book.model.js"></script>
+        <script type="text/javascript" src="js/models/library.collection.js"></script>
+
+        <!-- App Views -->
+        <script type="text/javascript" src="js/views/book.view.js"></script>
+        <script type="text/javascript" src="js/views/library.view.js"></script>
+
+        <!-- App -->
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>

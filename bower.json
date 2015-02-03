@@ -1,0 +1,17 @@
+{
+  "name": "Backbone Library",
+  "version": "0.0.0",
+  "authors": [
+    "Todd Beauchamp <toddbee@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}

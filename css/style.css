@@ -1,0 +1,39 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* Book list */
+
+.book-container {
+    width: 25%;
+    float: left;
+    margin-bottom: 12px;
+}
+.book-container img {
+    width: 100%;
+}
+
+/* Inputs */
+.add-book-form {
+    width: 100%;
+    float: left;
+    margin-bottom: 48px;
+}
+
+.input-set:first-child {
+    width: 100%;
+}
+
+.input-set {
+    width: 25%; 
+    float: left;
+}
+
+.input-set input {
+    width: 100%;
+}
+
+input[type="file"] {
+    clear: both;
+}
