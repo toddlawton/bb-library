@@ -1,6 +1,6 @@
 .container {
     width: 960px;
-    margin: 0 auto;
+    margin: 48px auto 0;
 }
 
 /* Book list */
@@ -8,7 +8,8 @@
 .book-container {
     width: 25%;
     float: left;
-    margin-bottom: 12px;
+    padding: 12px;
+    box-sizing: border-box;
 }
 .book-container img {
     width: 100%;
@@ -28,6 +29,8 @@
 .input-set {
     width: 25%; 
     float: left;
+    padding: 12px;
+    box-sizing: border-box;
 }
 
 .input-set input {
