@@ -10,10 +10,12 @@ app.LibraryView = Backbone.View.extend({
 
     initialize: function(initialBooks) {
         this.$booksList = this.$el.find('.book-list');
-        this.collection = new app.Library( initialBooks );
+        this.collection = new app.Library();
+        this.collection.fetch({reset: true});
         this.render();
 
         this.listenTo(this.collection, 'add', this.render);
+        this.listenTo(this.collection, 'reset', this.render);
     },
 
     render: function() {

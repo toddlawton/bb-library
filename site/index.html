@@ -40,8 +40,8 @@
                 <ul>
                     <li><%= title %></li>
                     <li><%= author %></li>
-                    <li><%= releaseDate %></li>
-                    <li><%= keywords %></li>
+                    <li><%= $.format.date( new Date( releaseDate ), 'MMMM yyyy' ) %></li>
+                    <li><% _.each( keywords, function( keyobj) {%> <sub><%= keyobj.keyword %></sub><% } ); %></li>
                 </ul>
 
                 <button class="delete">Delete</button>
@@ -49,6 +49,7 @@
 
         <!-- Lib -->
         <script type="text/javascript" src="js/lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery-dateFormat/dist/jquery-dateFormat.min.js"></script>
         <script type="text/javascript" src="js/lib/underscore/underscore-min.js"></script>
         <script type="text/javascript" src="js/lib/backbone/backbone.js"></script>
 

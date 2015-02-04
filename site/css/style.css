@@ -11,8 +11,13 @@
     padding: 12px;
     box-sizing: border-box;
 }
+
+.book-container ul { list-style-type: none; }
+.book-container li { margin-bottom: 0; }
+
 .book-container img {
     width: 100%;
+    margin-bottom: 12px;
 }
 
 /* Inputs */
