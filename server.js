@@ -24,7 +24,7 @@ app.get( '/api', function( request, response ) {
 });
 
 // Connect to database
-mongoose.connect( 'mongodb://localhost/library_databse' );
+mongoose.connect( 'mongodb://localhost/library_database' );
 
 // Schemas
 var Book = new mongoose.Schema({
@@ -34,7 +34,7 @@ var Book = new mongoose.Schema({
 });
 
 // Models
-var BookModel = mongoose.Model( 'Book', Book );
+var BookModel = mongoose.model( 'Book', Book );
 
 // Configure server
 app.configure( function() {
